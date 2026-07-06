@@ -16,7 +16,7 @@ llm = ChatAnthropic(
 # 测试 API 可用性
 try:
     print("正在测试 DeepSeek API 连接...")
-    response = llm.invoke("不要让树漂浮是什么梗")
+    response = llm.invoke("简单介绍竞品情报分析的作用")
     print("✅ API 连接成功！")
     print("模型回复：", response.content)
 except Exception as e:
