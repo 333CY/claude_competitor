@@ -1,7 +1,8 @@
 # ===== 必须放在所有导入之前 =====
 import os
+os.environ["HF_ENDPOINT"] = "https://hf-mirror.com"
 # 模型缓存全部下载到E盘
-os.environ["HF_HOME"] = r"E:\school\2025-2026-3\shixi\huggingface_cache"
+os.environ["HF_HOME"] = r"E:\学校\2025-2026-3\实习实训\huggingface_cache"
 
 from langchain_chroma import Chroma
 from langchain_huggingface.embeddings import HuggingFaceEmbeddings
