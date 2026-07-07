@@ -10,11 +10,5 @@ __pycache__/
 *.pyo
 *.pyd
 
-# Chroma向量数据库缓存
-chroma_db/
-
-# 环境密钥文件（避免泄露API Key）
-.env
-
 # VSCode配置（可选，按需添加）
 .vscode/
