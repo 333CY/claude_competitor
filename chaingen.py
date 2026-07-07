@@ -8,13 +8,13 @@ from langchain_huggingface.embeddings import HuggingFaceEmbeddings
 from dotenv import load_dotenv
 from langchain_core.runnables import RunnablePassthrough
 
-load_dotenv(dotenv_path="../.env")
-
+load_dotenv()
+print("读取到的密钥：", os.environ.get("ANTHROPIC_API_KEY")) 
 # 初始化 LLM（这不涉及下载，可以放外面）
 llm = ChatOpenAI(
-    model="deepseek-chat",        # 注意：模型名为 deepseek-chat 或 deepseek-reasoner
-    openai_api_key=os.environ.get("DEEPSEEK_API_KEY"),
-    base_url="https://api.deepseek.com/v1",
+    model="deepseek-v4-pro",
+    openai_api_key=os.environ.get("ANTHROPIC_API_KEY"),
+    base_url="https://api.deepseek.com",
     temperature=0.0,
     timeout=30,                    # 增加超时，避免永久卡住
 )
