@@ -12,3 +12,5 @@ __pycache__/
 
 # VSCode配置（可选，按需添加）
 .vscode/
+
+huggingface_cache
